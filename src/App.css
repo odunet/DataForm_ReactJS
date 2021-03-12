@@ -1,0 +1,262 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+body {
+  /* background-color: #282c34; */
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: #999999;
+  width: 80%;
+  margin: auto;
+  height: 90vh;
+
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+}
+
+header {
+  border-bottom: 3px solid #B1CEE9;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.nav > img {
+  width: 300px;
+  height: 100px;
+}
+
+#logoText {
+  color: #003366;
+  font-size: 4rem;
+  margin-top: 5px;
+  padding-left: 5px;
+  margin-bottom: 10px;
+  font-family: "Helvetica", san-serif;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section > div {
+  position: relative;
+  margin-left: 5px;
+  width: 50%;
+}
+
+section > div > p {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 3rem;
+  text-align: center;
+  color: #003366;
+  margin-top: 30%;
+}
+
+#form {
+  position: relative;
+  margin-right: 5px;
+  width: 50%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  width: 400px;
+  height: 500px;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-left: 30px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#form > div > form {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.formContent {
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #4696DF;
+  height: 20px;
+  padding: 5px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.formContent:focus {
+  background-color: #B1CEE9;
+}
+
+.btn {
+  width: 80%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #D4E3F1;
+  border: 1px solid #4696DF;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #50A2EC;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+#btn {
+  margin-bottom: 30px;
+  font-size: 1.2em;
+}
+
+#btnS {
+  margin-top: 40px;
+}
+
+/* form img {
+  display: none;
+} */
+
+i {
+  position: absolute;
+  padding: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #003366;;
+}
+
+/* #location {
+  display: none;
+} */
+
+#location {
+  width: 70%;
+  height: 40px;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #071A2B;
+  color: white;
+  border: 1px solid #4696DF;
+  cursor: pointer;
+}
+
+#location >p {
+  margin: 2px;
+  padding: 2px;
+  font-size: .8em;
+}
+
+@media only screen and (max-width: 1150px) {
+  .main {
+    background-color: #999999;
+    width: 95%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .main {
+    height: 95vh;
+  }
+  section {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    /* align-content: center; */
+    align-items: center;
+  }
+
+  section > div {
+    margin: auto;
+    height: 150px;
+    width: 80%;
+  }
+
+  section > div > p {
+    margin-top: 0%;
+    height: 100%;
+  }
+
+  .nav {
+    display: block
+  }
+
+  .nav > img {
+    display: none;
+  }
+  
+  #logoText {
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  #form {
+    width: 80%;
+    margin: auto;
+  }
+
+  .card {
+    margin: auto
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
+  section > div > p {
+    font-size: 2.3em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  section > div > p {
+    font-size: 2em;
+  }
+
+  #logoText {
+    font-size: 2em;
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 2px;
+    width: 250px;
+    height: 500px;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+
+  #location > p {
+    font-size: 0.7em;
+  }
+
+}
